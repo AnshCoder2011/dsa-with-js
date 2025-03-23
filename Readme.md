@@ -1,4 +1,4 @@
-# DSA with JS for YouTube
+# DSA with JS
 
 ## Video 0: Setup and Preparation
 
