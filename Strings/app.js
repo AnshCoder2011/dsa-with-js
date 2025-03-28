@@ -128,7 +128,6 @@ for (let i = 0; i < str14.length; i++) {
 }
 console.log(toggledStr);
 
-
 // frequeny of a character
 let str15 = "gangutaii";
 
