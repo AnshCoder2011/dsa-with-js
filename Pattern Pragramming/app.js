@@ -21,9 +21,9 @@ for (let i = 1; i <= n; i++) {
 
 // Right angle triangle pattern
 // *
-// * * 
-// * * * 
-// * * * * 
+// * *
+// * * *
+// * * * *
 // * * * * *
 
 for (let i = 1; i <= n; i++) {
@@ -76,19 +76,37 @@ for (let i = n; i >= 1; i--) {
 }
 
 // Inverted right angle mirror triangle pattern
-// * * * * * *
-//   * * * * *
-//     * * * *
-//       * * *
-//         * *
-//           *
+//         *
+//       * *
+//     * * *
+//   * * * *
+// * * * * *
 
-for (let i = n; i >= 1; i--) {
-  for (let j = n; j >= i; j--) {
-    process.stdout.write(" ");
+for (let i = 1; i <= n; i++) {
+  for (let j = 1; j <= n - i; j++) {
+    process.stdout.write("  "); // adds a space gap
   }
   for (let j = 1; j <= i; j++) {
     process.stdout.write("* ");
+  }
+  console.log(); // adds a line gap
+}
+
+
+// print X pattern
+// *       *
+//   *   *
+//     *
+//   *   *
+// *       *
+
+for (let i = 1; i <= n; i++) {  
+  for (let j = 1; j <= n; j++) {
+    if (i == j || i + j == n + 1) {
+      process.stdout.write("* ");
+    } else {
+      process.stdout.write("  "); // adds a space gap
+    }
   }
   console.log(); // adds a line gap
 }
